@@ -10,7 +10,7 @@ console.log(Gender);
 
 var Age = window.prompt("Enter your age:");
 AgeToNum = Number(Age);
-if (AgeToNum <= 0 ){
+if (AgeToNum <= 0  ){
 
 alert("Please Enter your Age correctly ");
 
