@@ -35,11 +35,7 @@ align-content: flex-start;
     align-content: center;
 margin-left: 200px;}
 
-/**.FormDiv{
-display: flex;
-align-items: flex-start;
-justify-self: left;
-}**/
+
 
 form {
     margin-top: 400px;
