@@ -17,9 +17,6 @@ if (AgeToNum <= 0) {
 
     AgeToNum = window.prompt("Enter your age:");
 }
-
-
-
 var UserChoice = confirm("Do You Want To Skip The Welcoming Message ?");
 console.log(UserChoice);
 
