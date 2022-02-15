@@ -17,8 +17,8 @@ if (AgeToNum <= 0) {
 
     AgeToNum = window.prompt("Enter your age:");
 }
-var UserChoice = confirm("Do You Want To Skip The Welcoming Message ?");
-console.log(UserChoice);
+var userChoice = confirm("Do You Want To Skip The Welcoming Message ?");
+console.log(userChoice);
 
 if (Gender == 'M') {
     alert(`WELCOME Mr ${Name} `)
@@ -29,22 +29,22 @@ else if (Gender == 'F') {
 }
 else {
     alert("Please enter your Gender as M or F")
-    var GenderafterEdit = window.prompt("Enter your gender:");
+    var GenderAfterEdit = window.prompt("Enter your gender:");
     // alert(`Your gender is ${GenderafterEdit}`);
-    console.log(GenderafterEdit);
+    console.log(GenderAfterEdit);
 
-    if (GenderafterEdit == 'M') {
+    if (GenderAfterEdit == 'M') {
         alert(`WELCOME Mr ${Name} `)
     }
-    else if (GenderafterEdit == 'F') {
+    else if (GenderAfterEdit == 'F') {
         alert(`WELCOME Ms ${Name} `)
 
     }
 }
 
 
-arr = [];
-function Bringanswers(question) {
+var arr = [];
+function BringAnswers(question) {
     answer = window.prompt(question);
     
      if (answer !== 'Yes' && answer !== 'yes' && answer !== 'No' && answer !== 'no' && answer !== '') {
@@ -53,16 +53,16 @@ function Bringanswers(question) {
         while (flag) {
             answer = window.prompt(question);
             if (answer == '') {
-                newanswer = "Invalid";
+                newAnswer = "Invalid";
                 flag = false;
             }
 
             else if (answer == 'Yes' || answer == 'yes') {
-                newanswer = "yes";
+                newAnswer = "yes";
                 flag = false;
             }
             else if (answer == 'No' || answer == 'no') {
-                newanswer = "no"
+                newAnswer = "no"
                 flag = false;
 
             }
@@ -71,7 +71,7 @@ function Bringanswers(question) {
             }
 
         }
-        arr.push(newanswer);
+        arr.push(newAnswer);
     }
     else { if (answer == ''){
           answer = "Invalid";
@@ -88,11 +88,11 @@ function Bringanswers(question) {
 
 
 
-Bringanswers("Are you married ? 'Answer the Yes or No'");
+BringAnswers("Are you married ? 'Answer the Yes or No'");
 
-Bringanswers("Do you love programming ? 'Answer the Yes or No'");
+BringAnswers("Do you love programming ? 'Answer the Yes or No'");
 
-Bringanswers("Do you like winter ? 'Answer the Yes or No'");
+BringAnswers("Do you like winter ? 'Answer the Yes or No'");
 
 
 
